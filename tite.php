@@ -11,7 +11,7 @@ date{color: blue;}
 </style>
 </head>
 <body>
-<div id="title">HNG INTERNSHIP 4.O</div>
+<div id="title">HNG INTERNSHIP 4.O </div>
 <p><?php
 echo "".   date("h:ia");
 ?></p>
