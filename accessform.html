@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />;<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />;
+  <head>
+    <title>Access to my webpage</title>
+  <style>
+  body {
+    background-color: #000;
+    font-family: 'Oswald', 'Futura', sans-serif;
+    margin: 0;
+    padding: 0;}
+    #page {
+      background-color: #403c3b;
+      margin: 0 auto 0 auto;}
+      form {
+        padding: 0 60px 65px 60px;}
+
+      label {
+        color: #fff;
+        display: block;
+        margin: 10px 0 10px 0;
+        font-size: 24px;}
+
+      input[type='text'], input[type='password'], textarea {
+        background-color: #999;
+        color: #666;
+        font-family: 'Oswald', 'Futura', sans-serif;
+        font-size: 24px;
+        width: 96%;
+        padding: 4px 6px;
+        border: 1px solid #999;
+        border-radius: 8px;}
+
+      input[type='text']:focus, input[type='password']:focus, textarea:focus {
+        border: 1px solid #fff;
+        background-color: #fff;
+        outline: none;}
+
+      input[type='submit'], a.add {
+        background-color: #cb6868;
+        color: #f3dad1;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 10px;
+        margin-top: 10px;
+        float: right;
+        font-size: 18px;
+        text-decoration: none;
+        text-transform: uppercase;}
+
+      input[type='submit']:hover, a.add:hover {
+        background-color: #d75359;
+        color: #f3dad1;
+        cursor: pointer;
+        box-shadow: none;
+        position: relative;
+        top: 1px;}
+
+      textarea {
+        width: 96%;
+        height: 5em;
+        line-height: 1.4em;}
+
+      select, option {
+        font-size: 16px;}
+
+
+  </style>
+  </head>
+  <body>
+    <div id="page">
+      <h1>Access Form</h1>
+      <form method="post" action="Access" id="Signup">
+        <label for="Gender" class="genderbox"> Select your Gender: </label>
+        <select id="form">
+          <option value="annual">Male</option>
+          <option value="monthly">Female</option>
+        </select></br>
+        <label class= "password">pls type a password: </label>
+        <input type="password" value="password"/>
+        <div id="Hint" class="tip"></div>
+
+        <input type="checkbox" id="terms" />
+        <label for="terms" class="checkbox"> Do you agree to view this page?</label>
+        <div id="alert" class="warning"></div>
+
+        <input type="submit" value="Click Here" />
+
+        </form>
+      </div>
+
+    </body>
+</html>

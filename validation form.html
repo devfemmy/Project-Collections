@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		alert("please click the submit button after each entry");
+		function register(){
+			let valid = [];
+			valid[0]= document.getElementById("name").value;
+			valid[1]= document.getElementById("lname").value;
+			valid[2]= document.getElementById("Email").value;
+			valid[3]= document.getElementById("Password").value;
+			valid[4]= document.getElementById("Confirm").value;
+	
+
+		 	let error=[];
+		 	error[0]= "<span style='color:red'>pls type your name</span>";
+		 	error[1]= "<span style='color:red'>pls type your last name</span>";
+		 	error[2]= "<span style='color:red'>pls type your Email</span>";
+		 	error[3]= "<span style='color:red'>pls type your Password</span>";
+		 	error[4]= "<span style='color:red'>pls confirm your Password</span>";
+		 	
+		 	let divs= new Array("mname","mlname","memail","mpassword","mconfirm");
+		 	for(i in valid){
+		 		var denied=error[i];
+		 		var div= divs[i];
+		 		if (valid[i]==""){
+		 			document.getElementById(div).innerHTML=denied;
+		 		}else {
+		 			document.getElementById(div).innerHTML="<span style='color:green'>ACCESS GRANTED!</span>";
+ 
+		 		}
+		 	}
+
+		}
+
+	</script>
+	<style type="text/css">
+		form{
+
+			background-color: white;
+			width: 50%;
+			height:50%;
+			margin-top: 5%;
+			align-content: center;
+
+		}
+		h1,h2{
+			color: white;
+		}
+	</style>
+	
+</head>
+<body background="vde.jpg">
+	<h1>VALIDATION FORM</h1>
+	<h2>Please fill in your details correctly and click on the submit button after each entry!</h2>
+	<form color = white>
+		<table border="1">
+			<tr><td>Name:</td><td><input type="text" name="Name" id="name" /></td><td><div id="mname"></div></td></tr>
+			<tr><td>Last Name:</td><td><input type="text" name="LName" id="lname" /></td><td><div id="mlname"></div></td></tr>
+			<tr><td>Email:</td><td><input type="text" name="Email" id="Email" /></td><td><div id="memail"></div></td></tr>
+			<tr><td>Password:</td><td><input type="text" name="Password" id="Password" /></td><td><div id="mpassword"></div></td></tr>
+			<tr><td>Confirm Password:</td><td><input type="text" name="Confirm" id="Confirm" /></td><td><div id="mconfirm"></div></td></tr>
+		</table>
+
+	<input type="button" name="Submit" value="Submit" onclick="register()"/>
+	</form>
+</body>
+</html>
