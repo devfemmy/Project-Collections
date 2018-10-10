@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-navbar color="danger">
+        <ion-title>
+              Lead Brochure
+        </ion-title>
+  </ion-navbar>
+</ion-header>
+    
+<ion-content padding class="scroll" >
+  
+  <ion-scroll scrollX="true" scrollY="true" zoom="true" style="width: 100%; height: 100%">
+      <canvas id="the-canvas"></canvas>
+  </ion-scroll>
+    
+</ion-content>
+
+<ion-footer>
+  <div>
+      
+      <ion-row nowrap>
+          <ion-col>
+              <button id="prev" ion-button color="danger">Previous</button>
+          </ion-col>
+          <ion-col>
+              <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+          </ion-col>
+          <ion-col>
+              <button id="next" ion-button color="danger">Next</button>
+          </ion-col>
+
+          <ion-col>
+              <button id="remove"  ion-button icon-only>
+                  <ion-icon name="remove"></ion-icon>
+              </button>
+          </ion-col>
+          <ion-col>
+              <span>Zoom: <span id="font_size"></span> </span>
+          </ion-col>
+          <ion-col>
+              <button id="add" color="danger" ion-button icon-only>
+                  <ion-icon name="add"></ion-icon>
+              </button>
+          </ion-col>
+      </ion-row>
+  </div>
+</ion-footer>
+    
